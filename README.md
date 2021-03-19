@@ -29,8 +29,10 @@ docker run --name cities-db -d -p 5432:5432 -e POSTGRES_USER=postgres_user_city 
 ```shell script
 cd ~/workspace/sql-paises-estados-cidades/PostgreSQL
 
-docker run -it --rm --net=host -v $PWD:/tmp postgres /bin/bash 
-# Você pode usar o caminho completo da pasta no lugar de "$PWD"
+# Você pode usar o caminho completo da pasta no lugar de "pwd".
+# No Windows você pode usar o terminal "cmder" ou qualquer outro compativel com o comanado "pwd".
+# Antes de rodar o comando navegue até a pasta.
+docker run -it --rm --net=host -v pwd:/tmp postgres /bin/bash 
 
 psql -h localhost -U postgres_user_city cities -f /tmp/pais.sql
 psql -h localhost -U postgres_user_city cities -f /tmp/estado.sql
@@ -60,7 +62,7 @@ psql -U postgres_user_city cities
 
 Point
 ```roomsql
-select ((select lat_lon from cidade where id = 4929) <@> (select lat_lon from cidade where id=5254)) as distance;
+select ((select lat_lon from cidade where id = 4929) <'@'> (select lat_lon from cidade where id=5254)) as distance;
 ```
 
 Cube
