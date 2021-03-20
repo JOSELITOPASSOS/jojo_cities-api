@@ -29,14 +29,14 @@ docker run --name cities-db -d -p 5432:5432 -e POSTGRES_USER=postgres_user_city 
 ```shell script
 cd ~/workspace/sql-paises-estados-cidades/PostgreSQL
 
-# Você pode usar o caminho completo da pasta no lugar de "pwd".
+# Você pode usar o caminho completo da pasta no lugar de "pwd" (Recomendado).
 # No Windows você pode usar o terminal "cmder" ou qualquer outro compativel com o comanado "pwd".
 # Antes de rodar o comando navegue até a pasta.
-docker run -it --rm --net=host -v pwd:/tmp postgres /bin/bash 
+docker run -it --rm --net=host -v pwd:/temp postgres /bin/bash 
 
-psql -h localhost -U postgres_user_city cities -f /tmp/pais.sql
-psql -h localhost -U postgres_user_city cities -f /tmp/estado.sql
-psql -h localhost -U postgres_user_city cities -f /tmp/cidade.sql
+psql -h localhost -U postgres_user_city cities -f /temp/pais.sql
+psql -h localhost -U postgres_user_city cities -f /temp/estado.sql
+psql -h localhost -U postgres_user_city cities -f /temp/cidade.sql
 
 psql -h localhost -U postgres_user_city cities
 
