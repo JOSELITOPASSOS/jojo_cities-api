@@ -62,7 +62,7 @@ psql -U postgres_user_city cities
 
 Point
 ```roomsql
-select ((select lat_lon from cidade where id = 4929) <'@'> (select lat_lon from cidade where id=5254)) as distance;
+select ((select lat_lon from cidade where id = 4929) <@> (select lat_lon from cidade where id=5254)) as distance;
 ```
 
 Cube
