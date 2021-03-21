@@ -26,8 +26,8 @@ public class State {
 
         private Integer ibge;
 
-  /* 1st
-  @Column(name = "pais")
+  // 1st
+/*  @Column(name = "pais")
   private Integer countryId;*/
 
         // 2nd - @ManyToOne
@@ -67,7 +67,7 @@ public class State {
             return country;
         }
 
-  /*public Integer getCountryId() {
-      return countryId;
-  }*/
+        /*public Integer getCountryId() {
+            return countryId;
+        }*/
 }
