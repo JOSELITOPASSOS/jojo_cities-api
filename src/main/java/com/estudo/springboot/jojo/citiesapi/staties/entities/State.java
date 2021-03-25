@@ -1,6 +1,6 @@
-package com.estudo.springboot.jojo.citiesapi.staties;
+package com.estudo.springboot.jojo.citiesapi.staties.entities;
 
-import com.estudo.springboot.jojo.citiesapi.countries.Country;
+import com.estudo.springboot.jojo.citiesapi.countries.entities.Country;
 import com.vladmihalcea.hibernate.type.json.JsonBinaryType;
 import org.hibernate.annotations.Type;
 import org.hibernate.annotations.TypeDef;
@@ -41,6 +41,25 @@ public class State {
         private List<Integer> ddd;
 
         public State() {
+        }
+
+        /**
+         *
+         * @param id
+         * @param name
+         * @param uf
+         * @param ibge
+         * @param country
+         * @param ddd
+         */
+        public State(Long id, String name, String uf, Integer ibge,
+                     Country country, List<Integer> ddd) {
+                this.id = id;
+                this.name = name;
+                this.uf = uf;
+                this.ibge = ibge;
+                this.country = country;
+                this.ddd = ddd;
         }
 
         public Long getId() {

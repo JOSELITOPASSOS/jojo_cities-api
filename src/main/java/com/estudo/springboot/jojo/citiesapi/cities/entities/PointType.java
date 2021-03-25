@@ -1,4 +1,4 @@
-package com.estudo.springboot.jojo.citiesapi.cities;
+package com.estudo.springboot.jojo.citiesapi.cities.entities;
 
 import java.io.Serializable;
 import java.sql.PreparedStatement;

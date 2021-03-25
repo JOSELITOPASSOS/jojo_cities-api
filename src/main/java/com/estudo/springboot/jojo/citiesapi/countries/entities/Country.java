@@ -1,4 +1,4 @@
-package com.estudo.springboot.jojo.citiesapi.countries;
+package com.estudo.springboot.jojo.citiesapi.countries.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

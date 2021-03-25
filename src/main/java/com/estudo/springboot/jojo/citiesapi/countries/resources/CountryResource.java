@@ -1,7 +1,7 @@
-package com.estudo.springboot.jojo.citiesapi.countries;
+package com.estudo.springboot.jojo.citiesapi.countries.resources;
 
-import com.estudo.springboot.jojo.citiesapi.countries.Country;
-import com.estudo.springboot.jojo.citiesapi.countries.repository.CountryRepository;
+import com.estudo.springboot.jojo.citiesapi.countries.entities.Country;
+import com.estudo.springboot.jojo.citiesapi.countries.repositories.CountryRepository;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;

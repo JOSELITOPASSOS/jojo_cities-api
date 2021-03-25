@@ -1,5 +1,7 @@
-package com.estudo.springboot.jojo.citiesapi.cities;
+package com.estudo.springboot.jojo.citiesapi.cities.resources;
 
+import com.estudo.springboot.jojo.citiesapi.cities.entities.City;
+import com.estudo.springboot.jojo.citiesapi.cities.repositories.CityRepository;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.GetMapping;

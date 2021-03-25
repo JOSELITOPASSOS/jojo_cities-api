@@ -68,8 +68,8 @@ select ((select lat_lon from cidade where id = 4929) <@> (select lat_lon from ci
 Cube
 ```roomsql
 select earth_distance(
-    ll_to_earth(-21.95840072631836,-47.98820114135742), 
-    ll_to_earth(-22.01740074157715,-47.88600158691406)
+    ll_to_earth(-21.9584007263184,-47.9882011413574), 
+    ll_to_earth(-22.0174007415771,-47.8860015869141)
 ) as distance;
 ```
 

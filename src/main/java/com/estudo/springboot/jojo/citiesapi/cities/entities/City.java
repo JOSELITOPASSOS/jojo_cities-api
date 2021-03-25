@@ -1,9 +1,11 @@
-package com.estudo.springboot.jojo.citiesapi.cities;
+package com.estudo.springboot.jojo.citiesapi.cities.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+
+import com.estudo.springboot.jojo.citiesapi.cities.entities.PointType;
 import org.hibernate.annotations.Type;
 import org.hibernate.annotations.TypeDef;
 import org.hibernate.annotations.TypeDefs;
@@ -39,7 +41,7 @@ public class City {
     public City() {
     }
 
-    /*public City(final Long id, final String name, final Integer uf, final Integer ibge,
+    public City(final Long id, final String name, final Integer uf, final Integer ibge,
                 final String geolocation, final Point location) {
         this.id = id;
         this.name = name;
@@ -47,7 +49,7 @@ public class City {
         this.ibge = ibge;
         this.geolocation = geolocation;
         this.location = location;
-    }*/
+    }
 
     public Long getId() {
         return id;
